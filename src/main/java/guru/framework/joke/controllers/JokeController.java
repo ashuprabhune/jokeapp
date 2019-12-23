@@ -19,7 +19,7 @@ public class JokeController {
     @RequestMapping({"/",""})
     private String showJoke(Model model){
 
-        model.addAttribute("Joke",jokeService.getJoke());
+        model.addAttribute("joke",jokeService.getJoke());
 
         return "chucknorris";
 
